@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DMX Lys Kontroll</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>DMX Lys Kontroll</h1>
+    </header>
+
+    <div class="container">
+        <div id="layers">
+            <h2>Layers</h2>
+            <button onclick="addLayer()">Legg til Layer</button>
+            <!-- Legg til Layers-innhold her -->
+        </div>
+
+        <div id="dmxLights">
+            <h2>DMX Lys</h2>
+            <ul id="dmxLightsList">
+                <!-- Legg til DMX Lys-innhold her -->
+            </ul>
+        </div>
+
+        <div id="lightInfo" class="hidden">
+            <h2>Lys Informasjon</h2>
+            <label for="address">Adresse:</label>
+            <input type="text" id="address">
+            <label for="channel">Channel Modus:</label>
+            <input type="text" id="channel">
+            <button onclick="saveChanges()">Lagre Endringer</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
